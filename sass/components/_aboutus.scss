@@ -1,0 +1,34 @@
+.aboutus-list__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--second-title-color);
+  margin-bottom: 10px;
+}
+.aboutus-list__text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+  width: 270px;
+}
+
+.aboutus-list {
+  display: flex;
+}
+
+.aboutus-list__item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.aboutus-list__icon-box {
+  @extend %flex-setting;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--background-portfolio-btn);
+}

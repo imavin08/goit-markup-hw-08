@@ -1,0 +1,14 @@
+:root {
+  --main-title-color: #ffffff;
+  --second-title-color: #212121;
+  --main-text-color: #757575;
+  --second-text-color: rgba(255, 255, 255, 0.6);
+  --accent: #2196f3;
+  --background: #2f303a;
+  --background-portfolio-btn: #f5f4fa;
+}
+
+body {
+  font-family: "Roboto", Sans-serif;
+  color: var(--main-text-color);
+}

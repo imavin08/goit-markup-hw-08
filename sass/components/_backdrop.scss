@@ -1,0 +1,57 @@
+.backdrop {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  transition: opacity 1000ms, visibility 1000ms;
+}
+
+.backdrop__box {
+  width: 528px;
+  min-height: 581px;
+  background-color: var(--main-title-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 1000ms;
+  padding: 40px 40px;
+  .backdrop.is-hidden & {
+    transform: translateX(2000px);
+    transition: transform 1000ms;
+  }
+}
+
+.backdrop__close {
+  @extend %flex-setting;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: #ffffff;
+  &:hover,
+  &:focus .backdrop__icon {
+    fill: var(--accent);
+  }
+}
+
+.backdrop__icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 12px;
+}
