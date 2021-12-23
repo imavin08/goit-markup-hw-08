@@ -63,7 +63,15 @@ button {
 }
 
 .section {
-  padding-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .is-hidden {
@@ -72,11 +80,33 @@ button {
   pointer-events: none;
 }
 
+img {
+  height: auto;
+}
+
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .header-logo {
@@ -227,6 +257,7 @@ header {
   text-transform: uppercase;
   color: var(--second-title-color);
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .aboutus-list__text {
@@ -234,19 +265,38 @@ header {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
-  width: 270px;
 }
 
 .aboutus-list {
-  display: flex;
+  margin-bottom: -30px;
 }
 
-.aboutus-list__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .aboutus-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+}
+
+.aboutus-list__item {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .aboutus-list__item {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .aboutus-list__item {
+    flex-basis: calc(100% / 4 - 30px);
+  }
 }
 
 .aboutus-list__icon-box {
-  width: 270px;
   height: 120px;
   margin-bottom: 30px;
   background-color: var(--background-portfolio-btn);
@@ -269,6 +319,12 @@ header {
 
 .ourwork {
   padding-bottom: 94px;
+}
+
+@media screen and (max-width: 1200px) {
+  .ourwork {
+    display: none;
+  }
 }
 
 .ourwork-list__link {
