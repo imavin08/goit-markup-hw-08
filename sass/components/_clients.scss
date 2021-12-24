@@ -1,33 +1,62 @@
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+  }
 }
 
 .clients-title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
+  font-size: 26px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-title-color);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  @media screen and (min-width: 480px) {
+    font-size: 28px;
+    line-height: 1.18;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
 }
 
 .clients-list {
-  display: flex;
+  margin-bottom: -30px;
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+  }
 }
 
 .clients-list__item {
-  @extend %flex-setting;
-  width: 170px;
+  width: 100%;
   height: 92px;
-  &:not(:last-child) {
-    margin-right: 30px;
+  margin-bottom: 30px;
+  @media screen and (min-width: 480px) {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
 .clients-list__link {
-  width: 170px;
+  width: 100%;
   height: 92px;
   @extend %flex-setting;
   color: #afb1b8;
