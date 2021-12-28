@@ -81,20 +81,28 @@
 }
 
 .modal__policy-text {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: #757575;
   @extend %flex-setting;
   margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal__policy-link {
   text-decoration: underline;
   color: var(--accent);
-  font-size: 14px;
-  line-height: 1.71px;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal__policy-checkbox {

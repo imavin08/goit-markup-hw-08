@@ -8,14 +8,23 @@
   text-transform: uppercase;
   color: var(--main-title-color);
   margin-bottom: 20px;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .join {
-  margin-left: 70px;
+  margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+    margin-bottom: 0;
+  }
 }
 
 .join-list {
-  @extend %flex-setting;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .join-list__link {
@@ -36,11 +45,6 @@
 
 .join-list__item:not(:last-child) {
   margin-right: 10px;
-}
-
-.footer-box {
-  display: flex;
-  justify-content: baseline;
 }
 
 .join-list__icon {
