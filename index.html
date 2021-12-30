@@ -210,23 +210,50 @@
           <h2 class="ourwork-title">Чем мы занимаемся</h2>
           <ul class="ourwork-list">
             <li class="ourwork-list__link">
-              <img
-                src="./images/boxone.jpg"
-                alt="Руки печатают по клавиатуре"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/ourwork/work1.jpg    1x,
+                    ./images/ourwork/work1-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/ourwork/work1.jpg"
+                  alt="Руки печатают по клавиатуре"
+                />
+              </picture>
               <p class="ourwork-list__subtitle">Десктопные приложения</p>
             </li>
             <li class="ourwork-list__link">
-              <img src="./images/boxtwo.jpg" alt="Телефон в руке" width="370" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/ourwork/work2.jpg    1x,
+                    ./images/ourwork/work2-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img src="./images/ourwork/work2.jpg" alt="Телефон в руке" />
+              </picture>
+
               <p class="ourwork-list__subtitle">Мобильные приложения</p>
             </li>
             <li class="ourwork-list__link">
-              <img
-                src="./images/boxthree.jpg"
-                alt="Электронный планшет в руках"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/ourwork/work3.jpg    1x,
+                    ./images/ourwork/work3-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/ourwork/work3.jpg "
+                  alt="Электронный планшет в руках"
+                />
+              </picture>
+
               <p class="ourwork-list__subtitle">Дизайнерские решения</p>
             </li>
           </ul>
@@ -240,11 +267,34 @@
           <h2 class="team-title">Наша команда</h2>
           <ul class="ourteam-list">
             <li class="ourteam-list__link">
-              <img
-                src="./images/imgone.jpg"
-                alt="Парень в очках улыбается"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/ourteam/imgone.jpg 1x,
+                    ./images/ourteam/one2x.jpg  2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/ourteam/tab/one-tab.jpg   1x,
+                    ./images/ourteam/tab/one-tab2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/ourteam/mob/one-mob.jpg   1x,
+                    ./images/ourteam/mob/one-mob2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+
+                <img
+                  src="./images/ourteam/imgone.jpg"
+                  alt="Парень в очках улыбается"
+                />
+              </picture>
               <div class="ourteam-list__titletext">
                 <h3 class="ourteam-list__title">Игорь Демьяненко</h3>
                 <p class="ourteam-list__text" lang="en">Product Designer</p>
@@ -288,11 +338,34 @@
               </div>
             </li>
             <li class="ourteam-list__link">
-              <img
-                src="./images/imgtwo.jpg"
-                alt="Девушка улыбается"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/ourteam/imgtwo.jpg 1x,
+                    ./images/ourteam/two2x.jpg  2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/ourteam/tab/two-tab.jpg   1x,
+                    ./images/ourteam/tab/two-tab2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/ourteam/mob/two-mob.jpg   1x,
+                    ./images/ourteam/mob/two-mob2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+
+                <img
+                  src="./images/ourteam/imgtwo.jpg"
+                  alt="Девушка улыбается"
+                />
+              </picture>
               <div class="ourteam-list__titletext">
                 <h3 class="ourteam-list__title">Ольга Репина</h3>
                 <p class="ourteam-list__text" lang="en">Frontend Developer</p>
@@ -336,11 +409,35 @@
               </div>
             </li>
             <li class="ourteam-list__link">
-              <img
-                src="./images/imgthree.jpg"
-                alt="Парень улыбается"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/ourteam/imgthree.jpg 1x,
+                    ./images/ourteam/three2x.jpg  2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/ourteam/tab/three-tab.jpg   1x,
+                    ./images/ourteam/tab/three-tab2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/ourteam/mob/three-mob.jpg   1x,
+                    ./images/ourteam/mob/three-mob2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+
+                <img
+                  src="./images/ourteam/imgthree.jpg"
+                  alt="Парень улыбается"
+                />
+              </picture>
+
               <div class="ourteam-list__titletext">
                 <h3 class="ourteam-list__title">Николай Тарасов</h3>
                 <p class="ourteam-list__text" lang="en">Marketing</p>
@@ -384,11 +481,35 @@
               </div>
             </li>
             <li class="ourteam-list__link">
-              <img
-                src="./images/imgfour.jpg"
-                alt="Парень в очках улыбается"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/ourteam/imgfour.jpg 1x,
+                    ./images/ourteam/four2x.jpg  2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/ourteam/tab/four-tab.jpg   1x,
+                    ./images/ourteam/tab/four-tab2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/ourteam/mob/four-mob.jpg   1x,
+                    ./images/ourteam/mob/four-mob2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+
+                <img
+                  src="./images/ourteam/imgfour.jpg"
+                  alt="Парень улыбается"
+                />
+              </picture>
+
               <div class="ourteam-list__titletext">
                 <h3 class="ourteam-list__title">Михаил Ермаков</h3>
                 <p class="ourteam-list__text" lang="en">UI Designer</p>
@@ -562,7 +683,7 @@
         <div class="footer-mailing">
           <p class="footer-mailing__title">Подпишитесь на рассылку</p>
           <form action="#" class="mailing-form">
-            <label for="mailing-form__email"></label>
+            <label for="input-email"></label>
             <input
               id="input-email"
               name="email"
