@@ -183,6 +183,13 @@ img {
   display: flex;
 }
 
+@media screen and (max-width: 767px) {
+  .header-container {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
 header {
   border: 1px solid #ececec;
   border-top: none;
@@ -295,6 +302,7 @@ header {
 .mob-menu__link {
   font-size: 40px;
   line-height: 1.18;
+  font-weight: 500;
   color: var(--second-title-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -310,6 +318,7 @@ header {
 .mob-mailtel__tel {
   font-size: 34px;
   line-height: 1.18;
+  font-weight: 500;
   color: #2196f3;
   display: block;
   margin-bottom: 32px;
@@ -318,6 +327,7 @@ header {
 .mob-mailtel__mail {
   font-size: 24px;
   line-height: 1.17;
+  font-weight: 500;
   color: #757575;
 }
 
@@ -488,8 +498,10 @@ header {
   color: var(--main-text-color);
 }
 
-.aboutus-list {
-  margin-bottom: -30px;
+@media screen and (max-width: 1199px) {
+  .aboutus-list {
+    margin-bottom: -30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -500,8 +512,10 @@ header {
   }
 }
 
-.aboutus-list__item {
-  margin-bottom: 30px;
+@media screen and (max-width: 1199px) {
+  .aboutus-list__item {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
